@@ -1,0 +1,48 @@
+<h1>Results</h1>
+<div id="movies_list">
+	<% data.forEach(function(movie){ %>
+		<li>
+			<img src="<%= movie['Poster']%>" height="100">
+			<div class="movie_data">
+				<p><%= movie["Title"] %></p>
+				<p>Year : <%= movie["Year"] %></p>
+			</div>
+		</li>
+		<hr width="94%">
+	<% }) %>
+</div>
+<style rel="stylesheet">
+	body{
+		background-color: rgb(200,190,180);
+		margin: 0px;
+	}
+	h1{
+		text-align: center;
+		font-family: "Courier New";
+		margin: 0;
+		padding: 15px 0;
+		background-color: rgb(230,220,210);
+		border-bottom: 1px solid darkgray;
+		margin-bottom: 20px;
+	}
+	#movies_list{
+		background-color: rgb(230,220,210);
+		width: 60%;
+		margin: 0 auto;
+		padding: 20px;
+		border-radius: 8px;
+	}
+	li{
+		display:flex;
+		margin:20px;
+	}
+	img{
+		margin:0px 30px 0px 20px;
+		border: 1px solid darkgray;
+		border-radius: 3px;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+	p{
+		margin: 5px 0;
+	}
+</style>

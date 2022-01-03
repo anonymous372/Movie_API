@@ -1,0 +1,53 @@
+<h1>Search a movie</h1>
+<div>
+	<form action="/results" method="GET">
+		<input id="search" type="text" name="movie" placeholder="Avengers">
+		<input id="submit" type="submit">
+	</form>
+</div>
+<style>
+	body{
+		margin: 0px;
+		background-color: rgb(235,225,215);
+	}
+	div{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;		
+	}
+	h1{
+		margin: 0 0 50px 0;
+		padding: 50px 0;
+		text-align: center;
+		font-size: 50px;
+		color: rgb(230,230,230);
+		font-family: "Courier New";
+		background-color: black;
+	}	
+	#search{
+		padding: 0 20px;
+		margin-right: 20px;
+		width: 60%;
+		height: 45px;
+		background-color: rgb(245,235,225);
+		font-size: 27px;
+		font-weight: bold;
+		font-family: "Courier New";
+		border-radius: 12px;
+	}
+	#submit{
+		background-color: rgb(235,210,170);
+		color: rgb(80,80,80);
+
+		width: 120px;
+		height: 40px;
+		
+		border-radius: 5px;
+		outline: none;
+		border: 2px solid rgb(100,100,100); 
+
+		font-size: 18px;
+		font-weight: bold;
+		font-family: "Courier New";
+	}
+</style>
